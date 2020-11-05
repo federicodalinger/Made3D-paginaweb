@@ -1,0 +1,334 @@
+html{
+	font-size:62.5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-image:url(IMG/fondo.png); 
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	color: orange;
+}
+
+footer{
+	font-family: 'Merriweather', serif;
+}
+
+header nav ul li{	
+	font-size: 1.5rem;
+	list-style: none;
+}
+
+header nav ul li a{	
+	font-size: 1.7rem;
+	color:inherit;
+	list-style: none;
+	text-decoration:none;
+}
+
+footer nav ul li {	
+	font-size: 2rem;
+	color:inherit;
+	list-style: none;
+}
+
+.texto_bienvenida {	
+	font-size: 2rem;
+	text-align:center;
+} 
+
+.texto_secundario {	
+	font-size: 5.5rem;
+	color:inherit;
+	text-align:center;
+}
+
+.texto_terciario {	
+	font-size: 2rem;
+	color:inherit;
+	text-align:center;
+}
+
+.texto_seccion {	
+	font-size: 3.5rem;
+	text-align:center;
+	padding: 3rem;
+} 
+
+.texto_secc {	
+	font-size: 2rem;
+	text-align:center;
+} 
+
+ul li{	
+	font-size: 1.5rem;
+	text-align: left;
+} 
+
+header form fieldset{	
+	font-size: 1.7rem;
+} 
+
+header form legend{	
+	font-size: 2.5rem;
+} 
+
+table tr {	
+	font-size: 1.5rem;
+}
+
+.contenedormenu	{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	height: 3.5vh;
+}
+
+.estilomenu {
+	font-size: 2.5rem;
+	text-align:center;
+	color:inherit;
+	text-decoration:none;
+}
+
+header nav {
+	display: inline-block;
+	padding: 1rem;
+	position: relative;
+}
+
+.contenedorfoot	{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.estilofoot{
+	font-size: 2rem;
+	text-align:center;
+	color:inherit;
+	text-decoration:none;
+}
+
+footer div {
+	display: inline-block;
+	padding: 1rem;
+	position: bottom;
+}
+
+div div a:hover{
+	border-style: dashed;
+	color:inherit;
+	text-decoration: none;
+}
+
+.videosfotos{
+	display: flex;
+	flex-flow: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	animation-name:fadein;
+	animation-duration: 4s;
+}
+
+.gridvideos	{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.gridfotos	{
+	display: grid;
+	grid-template-areas: "headfoto headfoto headfoto"
+						"mainfoto mainfoto mainfoto"
+						"footfoto footfoto footfoto";
+	justify-content: center;
+	align-content: center;
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+}
+
+.videosfotosinicio	{
+	animation-name:fadein;
+	animation-duration: 3s;
+}
+
+.logoinicio	{
+	animation-name:bounce;
+	animation-duration: 2s;
+}
+
+.logoimpresion{
+	animation-name:bounce;
+	animation-duration: 2s;
+}
+
+.gridfotos .headfoto {
+	grid-area: (headfoto); 
+	justify-self:center;
+	align-self: center;
+}
+
+.gridfotos .mainfoto {
+	grid-area: (mainfoto);
+	justify-self:center;
+	align-self: center;
+}
+
+.gridfotos .footfoto {
+	grid-area: (footfoto);
+	justify-self:center;
+	align-self: center;
+}
+
+.efectozoom_1-25:hover{
+	transform: scale(1.15);
+}
+
+@keyframes fadein{
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.btn-terciary {
+	background-color: grey;
+	color:inherit;
+	text-decoration: none;
+	font-size: 1.7rem;
+}
+
+.btn:hover {
+	color:inherit;
+	border-style: dashed;
+}
+
+.footerestilo{
+	padding: 5px;
+}
+
+.imagenlogocurso1{
+	height: 30px;
+}
+
+.imagenlogocurso2{
+	height: 40px;
+}
+
+.imagenlogocurso3{
+	height: 50px;
+}
+
+.inicio11{
+height: 200px;
+
+}
+
+.inicio12{
+height: 225px;
+
+}
+
+.inicio21{
+height: 150px;
+
+}
+
+.videogaleria{
+	height: 500px;
+
+}
+
+.fotogaleria{
+	height: 170px;
+}
+
+.cotizacion{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	padding: 5px;
+}
+
+.checkboxtext{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: row;
+	vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px){
+
+	.contenedormenuheader { 
+		width: 200px; 
+	}
+
+	.estilomenu{
+		font-size: 1.25rem;
+	}
+
+	.texto_seccion {	
+		font-size: 2rem;
+		padding: 1rem;
+	}
+
+	.texto_terciario {	
+		font-size: 1.5rem;
+	}
+
+	.imagenlogocurso1{
+	height: 20px;
+	}
+
+.imagenlogocurso2{
+	height: 30px;
+	}
+
+.imagenlogocurso3{
+	height: 40px;
+	}
+
+.texto_secundario {	
+	font-size: 3.5rem;
+	}
+
+	.inicio11{
+	height: 115px;
+	}
+
+	.inicio12{
+	height: 110px;
+	}
+
+	.inicio21{
+	height: 77px;
+	}
+
+	.videosfotos{
+		/*display: flex;*/
+		/*flex-flow: nowrap;*/
+		flex-direction: column;
+		padding: 5px;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	
+	.videogaleria{
+		height:257px;
+	}
+
+	.fotogaleria{
+		height: 100px;
+	}
+
+	.gridfotos	{
+	grid-row-gap: 5px;
+	grid-column-gap: 5px;
+	}
+
+}
